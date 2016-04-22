@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/video_imageView" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_title"
+            android:text="@string/music_title"
+            android:layout_alignTop="@+id/video_size"
+            android:layout_alignLeft="@+id/video_singer"
+            android:layout_alignStart="@+id/video_singer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_singer"
+            android:text="@string/music_singer"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignBaseline="@+id/video_duration"
+            android:layout_alignBottom="@+id/video_duration"
+            android:layout_toRightOf="@+id/video_imageView"
+            android:layout_toEndOf="@+id/video_imageView" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_size"
+            android:text="@string/music_size"
+            android:layout_above="@+id/video_duration"
+            android:layout_alignLeft="@+id/video_duration"
+            android:layout_alignStart="@+id/video_duration" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/video_duration"
+            android:text="@string/music_duration"
+            android:layout_marginRight="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_alignBottom="@+id/video_imageView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="15dp" />
+
+
+</RelativeLayout>
